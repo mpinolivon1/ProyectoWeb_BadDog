@@ -22,7 +22,17 @@ body {
 .bg-dark {
     background-color: var(--second-color) !important;
 }
+
+.dropdown-item {
+    color: var(--first-alpha-color);
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
   
+.dropdown-item:hover {
+    color: var(--third-alpha-color);
+}
+
 .navbar-brand img {
     width: auto;
     height: 3rem;
@@ -75,7 +85,10 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+    .nav-item:hover {
+        background-color: transparent;
+    }
+      
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
